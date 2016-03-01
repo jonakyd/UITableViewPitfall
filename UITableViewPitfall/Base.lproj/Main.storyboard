@@ -24,10 +24,19 @@
                                     <segue destination="OhR-Px-RRp" kind="show" id="gsL-eq-aAB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8a1-bc-h3j">
+                                <rect key="frame" x="106" y="100" width="389" height="30"/>
+                                <state key="normal" title="Pitfall hide section header/footer view for stype grouped "/>
+                                <connections>
+                                    <segue destination="80Z-cs-8EU" kind="show" id="FkF-fp-qBe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8a1-bc-h3j" firstAttribute="top" secondItem="3uv-lA-Lxl" secondAttribute="bottom" constant="20" id="7tW-Sa-EfN"/>
                             <constraint firstItem="3uv-lA-Lxl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="9k9-Ej-9Ku"/>
+                            <constraint firstItem="8a1-bc-h3j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P3a-Vy-5XU"/>
                             <constraint firstItem="3uv-lA-Lxl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jFs-Qv-7Xc"/>
                         </constraints>
                     </view>
@@ -71,6 +80,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNb-yV-TTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1050" y="124"/>
+        </scene>
+        <!--Hide Section Header Footer View Controller-->
+        <scene sceneID="CCO-SR-i0l">
+            <objects>
+                <viewController id="80Z-cs-8EU" customClass="KYDHideSectionHeaderFooterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9sB-ui-YQe"/>
+                        <viewControllerLayoutGuide type="bottom" id="thS-Aj-T0O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MDx-NH-QSW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Se0-bS-YZ6">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="80Z-cs-8EU" id="bhK-Oq-7gc"/>
+                                    <outlet property="delegate" destination="80Z-cs-8EU" id="dk3-Tu-oZT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Se0-bS-YZ6" firstAttribute="top" secondItem="9sB-ui-YQe" secondAttribute="bottom" id="13g-ze-1jV"/>
+                            <constraint firstItem="thS-Aj-T0O" firstAttribute="top" secondItem="Se0-bS-YZ6" secondAttribute="bottom" id="Nmo-IR-d0m"/>
+                            <constraint firstItem="Se0-bS-YZ6" firstAttribute="leading" secondItem="MDx-NH-QSW" secondAttribute="leading" id="dbk-ZT-ASC"/>
+                            <constraint firstAttribute="trailing" secondItem="Se0-bS-YZ6" secondAttribute="trailing" id="vTr-z9-18R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Se0-bS-YZ6" id="n3P-Xj-EVV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B05-jV-HRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="861"/>
         </scene>
     </scenes>
 </document>
