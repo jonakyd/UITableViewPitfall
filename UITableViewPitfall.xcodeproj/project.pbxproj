@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA650D633B90107F61D2858 /* libPods-UITableViewPitfall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0359F74AF47E0D1588D6A731 /* libPods-UITableViewPitfall.a */; };
 		AC8BA7AE1C853D4000E519B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8BA7AD1C853D4000E519B4 /* main.m */; };
 		AC8BA7B11C853D4000E519B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8BA7B01C853D4000E519B4 /* AppDelegate.m */; };
 		AC8BA7B41C853D4000E519B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8BA7B31C853D4000E519B4 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0359F74AF47E0D1588D6A731 /* libPods-UITableViewPitfall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UITableViewPitfall.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5825E91ABA0E57E990651F /* Pods-UITableViewPitfall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableViewPitfall.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UITableViewPitfall/Pods-UITableViewPitfall.debug.xcconfig"; sourceTree = "<group>"; };
 		AC8BA7A91C853D4000E519B4 /* UITableViewPitfall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewPitfall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8BA7AD1C853D4000E519B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC8BA7AF1C853D4000E519B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		AC8BA7B81C853D4000E519B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC8BA7BB1C853D4000E519B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC8BA7BD1C853D4000E519B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF783E06DE6262A34978947D /* Pods-UITableViewPitfall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableViewPitfall.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITableViewPitfall/Pods-UITableViewPitfall.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA650D633B90107F61D2858 /* libPods-UITableViewPitfall.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				AC8BA7AB1C853D4000E519B4 /* UITableViewPitfall */,
 				AC8BA7AA1C853D4000E519B4 /* Products */,
+				B424874A7EBB72B0F71A0D1D /* Pods */,
+				F9A82DE66DAA814DAE4D61A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B424874A7EBB72B0F71A0D1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A5825E91ABA0E57E990651F /* Pods-UITableViewPitfall.debug.xcconfig */,
+				BF783E06DE6262A34978947D /* Pods-UITableViewPitfall.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9A82DE66DAA814DAE4D61A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0359F74AF47E0D1588D6A731 /* libPods-UITableViewPitfall.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC8BA7C01C853D4000E519B4 /* Build configuration list for PBXNativeTarget "UITableViewPitfall" */;
 			buildPhases = (
+				E5E038737A90B3A60A399ED6 /* Check Pods Manifest.lock */,
 				AC8BA7A51C853D4000E519B4 /* Sources */,
 				AC8BA7A61C853D4000E519B4 /* Frameworks */,
 				AC8BA7A71C853D4000E519B4 /* Resources */,
+				BC0D486067463434C541B68D /* Embed Pods Frameworks */,
+				475902DE4992B3D4520B9816 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		475902DE4992B3D4520B9816 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UITableViewPitfall/Pods-UITableViewPitfall-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0D486067463434C541B68D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UITableViewPitfall/Pods-UITableViewPitfall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E038737A90B3A60A399ED6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC8BA7A51C853D4000E519B4 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		AC8BA7C11C853D4000E519B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5825E91ABA0E57E990651F /* Pods-UITableViewPitfall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UITableViewPitfall/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		AC8BA7C21C853D4000E519B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF783E06DE6262A34978947D /* Pods-UITableViewPitfall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UITableViewPitfall/Info.plist;
@@ -298,6 +375,7 @@
 				AC8BA7C21C853D4000E519B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
