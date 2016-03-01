@@ -14,6 +14,7 @@
 		AC8BA7B71C853D4000E519B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8BA7B51C853D4000E519B4 /* Main.storyboard */; };
 		AC8BA7B91C853D4000E519B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC8BA7B81C853D4000E519B4 /* Assets.xcassets */; };
 		AC8BA7BC1C853D4000E519B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC8BA7BA1C853D4000E519B4 /* LaunchScreen.storyboard */; };
+		AC8BA7C51C8540C700E519B4 /* KYDTableHeaderViewInUIViewControllerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8BA7C41C8540C700E519B4 /* KYDTableHeaderViewInUIViewControllerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		AC8BA7B81C853D4000E519B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC8BA7BB1C853D4000E519B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC8BA7BD1C853D4000E519B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8BA7C31C8540C700E519B4 /* KYDTableHeaderViewInUIViewControllerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDTableHeaderViewInUIViewControllerController.h; sourceTree = "<group>"; };
+		AC8BA7C41C8540C700E519B4 /* KYDTableHeaderViewInUIViewControllerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDTableHeaderViewInUIViewControllerController.m; sourceTree = "<group>"; };
 		BF783E06DE6262A34978947D /* Pods-UITableViewPitfall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITableViewPitfall.release.xcconfig"; path = "Pods/Target Support Files/Pods-UITableViewPitfall/Pods-UITableViewPitfall.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +77,8 @@
 				AC8BA7BA1C853D4000E519B4 /* LaunchScreen.storyboard */,
 				AC8BA7BD1C853D4000E519B4 /* Info.plist */,
 				AC8BA7AC1C853D4000E519B4 /* Supporting Files */,
+				AC8BA7C31C8540C700E519B4 /* KYDTableHeaderViewInUIViewControllerController.h */,
+				AC8BA7C41C8540C700E519B4 /* KYDTableHeaderViewInUIViewControllerController.m */,
 			);
 			path = UITableViewPitfall;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				AC8BA7B41C853D4000E519B4 /* ViewController.m in Sources */,
 				AC8BA7B11C853D4000E519B4 /* AppDelegate.m in Sources */,
 				AC8BA7AE1C853D4000E519B4 /* main.m in Sources */,
+				AC8BA7C51C8540C700E519B4 /* KYDTableHeaderViewInUIViewControllerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
